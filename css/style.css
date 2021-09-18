@@ -3,6 +3,7 @@ body {
     margin: auto;
     width: 50%;
     padding: 10px;
+    
   }
   header {
       background-color: #11324D;
@@ -27,8 +28,17 @@ body {
     background-color: #11324D;
     padding: 10px;
     color: #C1CFC0;
-    position: relative;
+    position: absolute;
     height: 50px;
-    /* margin-top: 560px; */
     text-align: center;
+    bottom: 0;
+    left: auto;
+    right: auto;
+    width: 50%;
+    
+  }
+  #mainpicture{
+    height: 250px;
+    float: right;
+    margin-right: 50px;
   }
