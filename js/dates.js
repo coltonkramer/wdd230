@@ -1,2 +1,3 @@
-const copyrightyear = document.getElementById("copyrightyear");
-copyrightyear.TextContent = new Date().getFullYear();
+document.getElementById("copyrightyear").textContent = new Date().getFullYear();
+
+document.getElementById("lastmodified").innerHTML = document.lastModified;
