@@ -37,6 +37,7 @@ body {
     left: auto;
     right: auto;
     width: 75%;
+    border-radius: 25px;
     
   }
   #mainpicture{
