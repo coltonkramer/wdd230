@@ -43,8 +43,10 @@ body {
   }
   section p{
       font-size: large;
-      color: #6B7AA1;
+      color: #333333;
       font-family: 'Yaldevi', sans-serif;
+      text-align: center;
+      font-weight: 600;
   }
   ul {
     color:#6B7AA1;
@@ -58,7 +60,6 @@ body {
     color: #C1CFC0;
     text-align: center;
     position: absolute;
-    bottom: .01;
     width: 75%;
     height: 5%;
     ;
