@@ -1,0 +1,22 @@
+@media only screen and (min-width: 60em){
+
+ .navigation{
+    display:flex;
+}
+ .navigation li:first-child{
+    display: none;
+}
+.navigation li{
+    display:block;
+    flex: 1 1 100%;
+    
+} 
+.logo{
+    float: left;
+    padding: 5px;
+    margin:3px;
+    margin-left: 50px;
+}
+
+
+}
