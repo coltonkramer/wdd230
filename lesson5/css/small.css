@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akronim&display=swap');
+
+body{
+    background-color: #90B494;
+    width: 60%;
+    margin: auto;
+}
+header{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #33673B;
+    padding: 5px;
+}
+main{
+    color: #19231A;
+    font-family: 'Open Sans', sans-serif;
+}
+h1{
+    font-family: 'Akronim', cursive;
+    font-size: 3.5rem;
+    color:#C46200;
+    padding: 10px;
+    margin: 3px;
+}
+h4{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+
+}
+.logo{
+    align-items: center;
+}
+.navigation li:first-child{
+    display: block;   
+}
+.navigation{
+    list-style: none;
+    text-align: center;
+    background-color: #19231A;
+    color: #fff;
+    padding-left: 0;
+    
+    
+}
+.navigation li{
+    display: none;
+    padding: 5px 0 5px 0;
+    
+}
+.navigation li:hover{
+    background-color: #C46200;
+    width: 100%;
+    
+}
+.navigation a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    justify-content: space-evenly;
+}
+.responsive li{
+    display:block
+}
+.content{
+    padding-left: 0;
+    background-color:#33673B;
+    
+}
+.content li{
+    list-style: none;
+    text-align: center;
+    padding: 5px;
+}
+.content a{
+    text-decoration: none;
+    color: #fff;
+}
+.content li:hover{
+    background-color: #fff;
+    color: #33673B;
+}
+.content a:hover{
+    color: #33673B;
+}
+footer{
+    background-color: #33673B;
+    padding: 5px;
+    text-align: center;
+    color: #19231A;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    bottom: 0;
+    position: absolute;
+    width: 60%;
+}
+footer a{
+    text-decoration: none;
+    color: #19231A;
+}
