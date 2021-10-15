@@ -5,6 +5,7 @@ body{
     background-color: #90B494;
     width: 60%;
     margin: auto;
+    font-size: 18px;
 }
 header{
     text-align: center;
@@ -18,16 +19,16 @@ main{
 }
 h1{
     font-family: 'Akronim', cursive;
-    font-size: 3.5rem;
+    font-size: 3.5em;
     color:#C46200;
     padding: 10px;
     margin: 3px;
 }
-h4{
+h2{
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
-    font-style: italic;
-
+    font-size: 1em;
+    color:#fff
 }
 .logo{
     align-items: center;
@@ -41,8 +42,6 @@ h4{
     background-color: #19231A;
     color: #fff;
     padding-left: 0;
-    
-    
 }
 .navigation li{
     display: none;
@@ -89,14 +88,15 @@ footer{
     background-color: #33673B;
     padding: 5px;
     text-align: center;
-    color: #19231A;
+    color: #fff;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    font-size: .75em;
     bottom: 0;
     position: absolute;
     width: 60%;
 }
 footer a{
     text-decoration: none;
-    color: #19231A;
+    color: #fff;
 }
