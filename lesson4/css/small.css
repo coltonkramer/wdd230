@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Akronim&display=swap');
 
 body{
-    background-color: #90B494;
+    background-color: #33673B;
     width: 60%;
     margin: auto;
     font-size: 18px;
@@ -10,7 +10,7 @@ body{
 header{
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    background-color: #33673B;
+    background-color: #90B494;
     padding: 5px;
 }
 main{
@@ -19,16 +19,16 @@ main{
 }
 h1{
     font-family: 'Akronim', cursive;
-    font-size: 3.5em;
+    font-size: 2.5em;
     color:#C46200;
     padding: 10px;
     margin: 3px;
 }
 h2{
     font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1em;
-    color:#fff
+    color:#111111
 }
 .logo{
     align-items: center;
@@ -39,8 +39,8 @@ h2{
 .navigation{
     list-style: none;
     text-align: center;
-    background-color: #19231A;
-    color: #fff;
+    background-color: #90B494;
+    color: #111111;
     padding-left: 0;
 }
 .navigation li{
@@ -55,7 +55,7 @@ h2{
 }
 .navigation a {
     display: block;
-    color: #fff;
+    color: #111111;
     text-decoration: none;
     padding: 5px;
     justify-content: space-evenly;
@@ -65,7 +65,7 @@ h2{
 }
 .content{
     padding-left: 0;
-    background-color:#33673B;
+    background-color:#90B494;
     
 }
 .content li{
@@ -75,20 +75,19 @@ h2{
 }
 .content a{
     text-decoration: none;
-    color: #fff;
+    color: #111111;
+    font-size: .8em;
 }
 .content li:hover{
-    background-color: #fff;
-    color: #33673B;
-}
-.content a:hover{
-    color: #33673B;
+    background-color: #C46200;
+    color: #111111;
 }
 footer{
-    background-color: #33673B;
+
+    background-color: #90B494;
     padding: 5px;
     text-align: center;
-    color: #fff;
+    color: #111111;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: .75em;
@@ -98,5 +97,5 @@ footer{
 }
 footer a{
     text-decoration: none;
-    color: #fff;
+    color: #111111;
 }
