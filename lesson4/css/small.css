@@ -20,7 +20,7 @@ main{
 h1{
     font-family: 'Akronim', cursive;
     font-size: 2.5em;
-    color:#C46200;
+    color:#014421;
     padding: 10px;
     margin: 3px;
 }
@@ -49,16 +49,21 @@ h2{
     
 }
 .navigation li:hover{
-    background-color: #C46200;
+    background-color: #014421;
     width: 100%;
     
+    
 }
-.navigation a {
+.navigation a{
     display: block;
     color: #111111;
     text-decoration: none;
     padding: 5px;
     justify-content: space-evenly;
+    
+}
+.navigation a:hover{
+    color:#fff
 }
 .responsive li{
     display:block
@@ -79,8 +84,11 @@ h2{
     font-size: .8em;
 }
 .content li:hover{
-    background-color: #C46200;
-    color: #111111;
+    background-color: #014421;
+    
+}
+.content li:hover, .content a:hover{
+    color: #fff;
 }
 footer{
 
