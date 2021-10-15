@@ -81,7 +81,7 @@ h2{
     color: #111111;
     font-size: .8em;
 }
-.content li:hover #link-style{
+.content li:hover{
     background-color: #014421;
     color:#fff;
 }
