@@ -178,3 +178,15 @@ footer a{
     margin-top: 20px;
     display: none;
 }
+#picnic-family{
+    max-width: 300px;
+    margin: 15px 0 15px 20px ;
+}
+#contact{
+    width: 60%;
+    text-align: right;
+    padding-bottom: 5px;
+}
+#contact h3{
+    text-align: right;
+}

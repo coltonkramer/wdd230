@@ -34,5 +34,9 @@ main{
 #hero-subheading, #weather-summary-list span{
     color: #fff;
 }
+#picnic-family{
+    float: right;
+    margin: 10px;
+}
 
 }
