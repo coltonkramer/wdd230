@@ -17,6 +17,7 @@ header{
 main{
     font-family: 'Open Sans', sans-serif;
     margin: auto;
+    padding-bottom: 2.5rem;    
 }
 h1{
     font-family: 'Akronim', cursive;
@@ -44,6 +45,7 @@ footer{
     font-size: .75em;
     bottom: 0;
     width: 100%;
+    position: absolute;
 }
 footer a{
     text-decoration: none;
@@ -121,6 +123,10 @@ footer a{
     width: 60%;
     margin: 0 auto;
 }
+#page-container {
+    position: relative;
+    min-height: 100vh;
+  }
 #preston{
     background-color: #014421;
     color: #F8F8FF;
