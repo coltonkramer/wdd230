@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Akronim&display=swap');
 
 body{
-    background-color: #33673B;
+    background-color: #F8F8FF;
     width: 60%;
     margin: auto;
     font-size: 18px;
@@ -76,17 +76,12 @@ h2{
     text-align: center;
     padding: 5px;
 }
-.content a{
+.content p{
     text-decoration: none;
     color: #111111;
     font-size: .8em;
-}
-.content li:hover{
-    background-color: #014421;
-    color:#fff;
-}
-.content a:hover{
-    color: #fff;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 footer{
     background-color: #90B494;

@@ -2,101 +2,176 @@
 @import url('https://fonts.googleapis.com/css2?family=Akronim&display=swap');
 
 body{
-    background-color: #90B494;
-    width: 60%;
+    background-color: #F8F8FF;
+    width: 100%;
     margin: auto;
+    font-size: 18px;
+    overflow-x: hidden;
 }
 header{
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    background-color: #33673B;
+    background-color: #90B494;
     padding: 5px;
 }
 main{
-    color: #19231A;
     font-family: 'Open Sans', sans-serif;
+    margin: auto;
 }
 h1{
     font-family: 'Akronim', cursive;
-    font-size: 3.5rem;
-    color:#C46200;
+    font-size: 2.5em;
+    color:#014421;
     padding: 10px;
     margin: 3px;
 }
 h2{
     font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    font-style: italic;
-
+    font-weight: 400;
+    font-size: 1em;
+    color:#111111
+}
+nav{
+    background-color: #90B494;
+}
+footer{
+    background-color: #90B494;
+    padding: 5px;
+    text-align: center;
+    color: #111111;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: .75em;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+footer a{
+    text-decoration: none;
+    color: #111111;
 }
 .logo{
     align-items: center;
+    padding: 5px;
+    margin: 10px;
 }
 .navigation li:first-child{
     display: block;   
 }
 .navigation{
     list-style: none;
-    text-align: center;
-    background-color: #19231A;
-    color: #fff;
-    padding-left: 0;
-    
-    
+    background-color: #90B494;
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
 .navigation li{
+    text-align: center;
     display: none;
     padding: 5px 0 5px 0;
     
 }
 .navigation li:hover{
-    background-color: #C46200;
+    background-color: #014421;
     width: 100%;
-    
 }
-.navigation a {
+.navigation a{
     display: block;
-    color: #fff;
+    color: #111111;
     text-decoration: none;
     padding: 5px;
     justify-content: space-evenly;
 }
-.responsive li{
-    display:block
+.navigation a:hover{
+    color:#fff;
 }
-.content{
-    padding-left: 0;
-    background-color:#33673B;
+.responsive li{
+    display:block;
+}
+.page-subheading{
+    text-align: center;
+}
+.summary-item-left{
+    text-align: right;
+    margin-right: 5px;
+}
+.days{
+    color: #F8F8FF;
+    background-color:#014421;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    border:1px solid black;
+}
+.day{
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+}
+#announcement{
+    font-family: 'Open Sans', sans-serif;
+    background-color: yellow;
+    text-align: center;
+    margin: 0 0 0 0;
+}
+#announcement p{
+    margin: 0;
+    padding: 10px;
+}
+#header{
+    width: 60%;
+    margin: 0 auto;
+}
+#preston{
+    background-color: #014421;
+    color: #F8F8FF;
+}
+#preston a{
+    color: #F8F8FF;
+}
+#page-heading{
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+#hero{
+    position:relative;
+    align-items: center;
     
 }
-.content li{
-    list-style: none;
+#hero-banner{
+    width: 100%;
+}
+#hero-subheading{
+    color: #F8F8FF;
+    margin: 5px 0 15px 0;
     text-align: center;
-    padding: 5px;
 }
-.content a{
-    text-decoration: none;
-    color: #fff;
-}
-.content li:hover{
-    background-color: #fff;
-    color: #33673B;
-}
-.content a:hover{
-    color: #33673B;
-}
-footer{
-    background-color: #33673B;
-    padding: 5px;
-    text-align: center;
-    color: #19231A;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    bottom: 0;
+#weather-summary{
+    background: rgba(1, 68, 33, .6);
+    padding: 10px;
+    width: 300px;
+    margin:0 auto;
     position: absolute;
-    width: 60%;
+    left:50px;
+    top: 25px;
 }
-footer a{
-    text-decoration: none;
-    color: #19231A;
+#weather-summary-list{
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#weather-summary-list span{
+    list-style: none;
+    color: #fff;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#forecast{
+    width: 100%;
+    overflow: auto;
+    border:1px solid black;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: none;
 }

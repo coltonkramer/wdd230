@@ -1,5 +1,7 @@
 @media only screen and (min-width: 60em){
-
+main{
+    width: 60%;
+}
  .navigation{
     display:flex;
 }
@@ -9,7 +11,6 @@
 .navigation li{
     display:block;
     flex: 1 1 100%;
-    
 } 
 .logo{
     float: left;
@@ -17,6 +18,17 @@
     margin:3px;
     margin-left: 50px;
 }
-
+#forecast{
+    display: block;
+}
+#weather-summary{
+    padding: 5px;
+    float:left;
+    position: absolute;
+    left:50px;
+    top: 25px;
+    width: 40%;
+    font-size: .8em;
+}
 
 }
