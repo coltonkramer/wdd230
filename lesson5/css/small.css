@@ -148,18 +148,16 @@ footer a{
     width: 100%;
 }
 #hero-subheading{
-    color: #F8F8FF;
+    color: #111111;
     margin: 5px 0 15px 0;
     text-align: center;
 }
 #weather-summary{
-    background: rgba(1, 68, 33, .6);
+    background-color: #90B494;
+    
     padding: 10px;
     width: 300px;
     margin:0 auto;
-    position: absolute;
-    left:50px;
-    top: 25px;
 }
 #weather-summary-list{
     padding-left: 0;
@@ -168,7 +166,7 @@ footer a{
 }
 #weather-summary-list span{
     list-style: none;
-    color: #fff;
+    color: #111111;
     margin-top: 5px;
     margin-bottom: 5px;
 }
