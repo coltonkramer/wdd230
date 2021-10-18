@@ -3,8 +3,8 @@ let today = new Date();
 var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 
-// let day = days[today.getDay()];
-let day = 'Friday'
+let day = days[today.getDay()];
+// let day = 'Friday'
 let date = today.getDate();
 let month = months[today.getMonth()];
 let year = today.getFullYear();
