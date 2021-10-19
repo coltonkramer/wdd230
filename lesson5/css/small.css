@@ -167,8 +167,11 @@ footer{
     margin-top: 20px;
     display: none;
 }
+#articles-title{
+    margin-bottom: 0;
+}
 #picnic-family{
-    max-width: 300px;
+    max-width: 250px;
     margin: 15px 0 15px 20px ;
 }
 #contact{
