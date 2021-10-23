@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akronim&display=swap');
+
+body{
+    background-color: #F8F8FF;
+    width: 100%;
+    margin: auto;
+    font-size: 18px;
+    overflow-x: hidden;
+}
+header{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #90B494;
+    padding: 5px;
+}
+main{
+    font-family: 'Open Sans', sans-serif;
+    margin: auto;
+    padding-bottom: 2.5rem;    
+}
+h1{
+    font-family: 'Akronim', cursive;
+    font-size: 2.5em;
+    color:#014421;
+    padding: 10px;
+    margin: 3px;
+}
+h2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    color:#111111
+}
+nav{
+    background-color: #90B494;
+}
+footer{
+    background-color: #90B494;
+    color: #111111;
+    font-family: 'Open Sans', sans-serif;
+}
+.logo{
+    align-items: center;
+    padding: 5px;
+    margin: 10px;
+}
+.navigation li:first-child{
+    display: block;   
+}
+.navigation{
+    list-style: none;
+    background-color: #90B494;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.navigation li{
+    text-align: center;
+    display: none;
+    padding: 5px 0 5px 0;
+    
+}
+.navigation li:hover{
+    background-color: #014421;
+    width: 100%;
+}
+.navigation a{
+    display: block;
+    color: #111111;
+    text-decoration: none;
+    padding: 5px;
+    justify-content: space-evenly;
+}
+.navigation a:hover{
+    color:#fff;
+}
+.responsive li{
+    display:block;
+}
+.page-subheading{
+    text-align: center;
+}
+.summary-item-left{
+    text-align: right;
+    margin-right: 5px;
+}
+.days{
+    color: #F8F8FF;
+    background-color:#014421;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    border:1px solid black;
+}
+.day{
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+}
+#announcement{
+    font-family: 'Open Sans', sans-serif;
+    background-color: yellow;
+    text-align: center;
+    margin: 0 0 0 0;
+}
+#announcement p{
+    margin: 0;
+    padding: 10px;
+}
+#header{
+    width: 60%;
+    margin: 0 auto;
+}
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+#preston{
+    background-color: #014421;
+    color: #F8F8FF;
+}
+#preston a{
+    color: #F8F8FF;
+}
+#page-heading{
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+#hero{
+    position:relative;
+    align-items: center;
+    
+}
+#hero-banner{
+    width: 100%;
+}
+#hero-subheading{
+    color: #111111;
+    margin: 5px 0 15px 0;
+    text-align: center;
+}
+#weather-summary{
+    background-color: #90B494;
+    
+    padding: 10px;
+    width: 300px;
+    margin:0 auto;
+}
+#weather-summary-list{
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#weather-summary-list span{
+    list-style: none;
+    color: #111111;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#forecast{
+    width: 100%;
+    overflow: auto;
+    border:1px solid black;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: none;
+}
+#articles-title{
+    margin-bottom: 0;
+}
+#picnic-family{
+    max-width: 250px;
+    margin: 15px 0 15px 20px ;
+}
+#contact{
+    width: 60%;
+    text-align: center;
+    padding-bottom: 5px;
+    margin: 0 auto;
+}
+#contact h3{
+    text-align: center;
+    padding: 5px;
+
+}
+#temp{
+    display: inline-block;
+}
+#map{
+    height:150px;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    
+
+}
+#footer{
+    background-color: #90B494;
+    padding: 5px;
+    text-align: center;
+    font-weight: 400;
+    font-size: .75em;
+    width: 100%;
+    position: absolute;
+}
+#footer a{
+    text-decoration: none;
+    color: #111111;
+}

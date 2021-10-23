@@ -1,0 +1,73 @@
+@media only screen and (min-width: 60em){
+main{
+    width: 60%;
+}
+ .navigation{
+    display:flex;
+}
+ .navigation li:first-child{
+    display: none;
+}
+.navigation li{
+    display:block;
+    flex: 1 1 100%;
+} 
+.logo{
+    float: left;
+    padding: 5px;
+    margin:3px;
+    margin-left: 50px;
+}
+#forecast{
+    display: block;
+}
+#weather-summary{
+    background: rgba(1, 68, 33, .6);
+    padding: 5px;
+    float:left;
+    position: absolute;
+    left:50px;
+    top: 25px;
+    width: 40%;
+    font-size: .8em;
+}
+#hero-subheading, #weather-summary-list span{
+    color: #fff;
+}
+#picnic-family{
+    float: right;
+    margin: 10px;
+}
+#contact{
+    width: 60%;
+    text-align: right;
+    padding-bottom: 5px;
+    margin: 0 auto;
+}
+#contact h3{
+    text-align: right;
+    padding: 5px;
+
+}
+#map{
+    height:150px;
+    float: left;
+    padding: 5px;
+    margin: 10px;
+    width:auto;
+}
+#footer{
+    background-color: #90B494;
+    padding: 5px;
+    text-align: center;
+    font-weight: 400;
+    font-size: .75em;
+    width: 100%;
+    position: absolute;
+}
+#footer a{
+    text-decoration: none;
+    color: #111111;
+}
+
+}

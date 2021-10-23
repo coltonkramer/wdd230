@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script defer src="js/script.js"></script>
+    <title>Bear Lake Boogaloo Homepage</title>
+    <meta name="author" content="Colton Kramer">
+    <meta name="description" content="The home page of the bear lake boogaloo web/weather site">
+</head>
+<body>
+    <div id=announcement></div>
+    <header>
+        <div id="header">
+            <img class = "logo" src="images/bear-rune.png" alt="A slavic bear rune">
+            <h1>Bear Lake Boogaloo</h1>
+            <h2>"There's always something to do!"</h2>
+        </div>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href = "#">Home</a> </li>
+            <li id="preston"><a  href = "#">Preston</a> </li>
+            <li><a href = "#">Soda Springs</a> </li>
+            <li><a href = "#">Fish Haven</a> </li>
+            <li><a href = "#">Storm Center</a> </li>
+            <li><a href = "#">Gallery</a> </li>
+        </ul>
+    </nav>
+    <div id ="page-container">
+        <main>
+            <h2 id="page-heading">Preston Idaho</h2>
+            <div id="hero">
+                <figure class ="responsive-hero-banner">
+                    <img id="hero-banner" alt="Mountain and Lake in Idaho" src="images\wdd230_image_franklinOriginal.webp" sizes="60vw"
+                    srcset=" images\wdd230_image_franklinOriginal_small_400.webp 400w, 
+                    images\wdd230_image_franklinOriginal_medium_800.webp 850w,
+                    images\wdd230_image_franklinOriginal_large_1000.webp 1000w" >
+
+                </figure>
+                <div id="weather-summary">
+                    <h3 id="hero-subheading">Weather Summary</h3>
+                        <div id="weather-summary-list">
+                            <span class="summary-item-left">Currently :</span> 
+                            <span class="summary-item-right">Meteor Shower</span>
+                            <span class="summary-item-left">High :</span> 
+                            <span class="summary-item-right" id="temp">2<span>&#176;F</span></span>
+                            <span class="summary-item-left">Wind Chill :</span>
+                            <span class="summary-item-right" id="wind-chill"></span>
+                            <span class="summary-item-left">Humidity :</span> 
+                            <span class="summary-item-right">10%</span>
+                            <span class="summary-item-left">Wind Speed :</span> 
+                            <span class="summary-item-right" id="speed">20<span>MPH</span></span>
+                        </div>
+                    </div>
+            </div>
+            <div id="forecast">
+                <h3 class="page-subheading">5 Day Forecast</h3>
+                    <div class="days">
+                        <div class="day">
+                            <span>Monday</span><br>
+                            <span>☀️</span><br>
+                            <span>76&#176;F</span>
+                        </div>
+                        <div class="day">
+                            <span>Tuesday</span><br>
+                            <span>☀️</span><br>
+                            <span>76&#176;F</span>
+                        </div>
+                        <div class="day">
+                            <span>Wednesday</span><br>
+                            <span>☀️</span><br>
+                            <span>76&#176;F</span>
+                        </div>
+                        <div class="day">
+                            <span>Thursday</span><br>
+                            <span>☀️</span><br>
+                            <span>76&#176;F</span>
+                        </div>
+                        <div class="day">
+                            <span>Friday</span><br>
+                            <span>☀️</span><br>
+                            <span>76&#176;F</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3 class="page-subheading" >Articles</h3>
+                <div id="articles">
+                    <h4 id="articles-title">Lorem ipsum dolor sit amet</h4>
+                    <img id="picnic-family" src="images/pexels-kampus-production-7669130.jpg" alt="family having a picnic">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna 
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit 
+                        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+                        occaecat cupidatat non proident, sunt in culpa qui officia 
+                        deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </main>
+            <footer>
+                <div id="contact">
+                    <img id="map" src="images/map.png" alt="map of preston id">
+                    <h3 class="page-subheading">Contact Information</h3>
+                    <p>Address: 123 blah st</p>
+                    <p>Phone: 222-222-2222</p>
+                    <p>Email: blahblah@blah.com</p>
+                </div>
+            <div id="footer">
+                <span id="current-full-date"></span> | Colton Kramer | North Carolina | <a href="https://www.byui.edu/online" 
+                > BYUI Online Learning</a>
+                <p id="lastmodified">Last Modified:</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
