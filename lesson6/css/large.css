@@ -73,7 +73,7 @@ main{
 #gallery{
     grid-template-columns: repeat(3, 1fr);
 }
-#gallery picture{
+#gallery figure{
     margin: 10px;
 }
 #gallery img{
@@ -82,7 +82,7 @@ main{
     justify-content: center;
 }
 
-#gallery picture:hover{
+#gallery figure:hover{
     box-shadow:  0 0 50px #333;
 }
 
