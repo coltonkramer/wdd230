@@ -1,20 +1,10 @@
+/* body and other general styles -------------------------------------------------*/
 body{
     background-color: #F8F8FF;
     width: 100%;
     margin: auto;
     font-size: 18px;
     overflow-x: hidden;
-}
-header{
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    background-color: #90B494;
-    padding: 5px;
-}
-main{
-    font-family: 'Open Sans', sans-serif;
-    margin: auto;
-    padding-bottom: 2.5rem;    
 }
 h1{
     font-family: 'Akronim';
@@ -26,21 +16,26 @@ h1{
 h2{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-size: 1em;
+    font-size: 1.5em;
     color:#111111
+}
+/* header and hero area ------------------------------------------------------------------*/
+header{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #90B494;
+    padding: 5px;
 }
 nav{
     background-color: #90B494;
 }
-footer{
-    background-color: #90B494;
-    color: #111111;
-    font-family: 'Open Sans', sans-serif;
+#announcement p{
+    margin: 0;
+    padding: 10px;
 }
-.logo{
-    align-items: center;
-    padding: 5px;
-    margin: 10px;
+#header{
+    width: 100%;
+    margin: 0 auto;
 }
 .navigation li:first-child{
     display: block;   
@@ -72,6 +67,31 @@ footer{
 .navigation a:hover{
     color:#fff;
 }
+.logo{
+    align-items: center;
+    padding: 5px;
+    margin: 10px;
+}
+#hero{
+    position:relative;
+    align-items: center;
+    
+}
+#hero-banner{
+    width: 100%;
+}
+#hero-subheading{
+    color: #111111;
+    margin: 5px 0 15px 0;
+    text-align: center;
+}
+/* main content --------------------------------------------------------------------*/
+main{
+    font-family: 'Open Sans', sans-serif;
+    margin: auto;
+    padding-bottom: 2.5rem;
+    width: 100%;    
+}
 .responsive li{
     display:block;
 }
@@ -95,48 +115,47 @@ footer{
     padding: 5px;
     margin: 10px;
 }
+.active{
+    background-color: #014421;
+}
+.active a{
+    color: #F8F8FF;
+}
+#gallery{
+    display: grid;
+    grid-template-columns:1fr;
+}
+#gallery-header{
+    text-align: center;
+}
+.gallery-pictures{
+    filter: blur(0em);
+    transition: filter 0.5s;
+    margin: 15px;
+    padding: 5px;
+    
+}
+.gallery-pictures[data-src] {
+    filter: blur(0.2em);
+}
+.gallery-caption{
+    margin-left: 15px;
+}
 #announcement{
     font-family: 'Open Sans', sans-serif;
     background-color: yellow;
     text-align: center;
     margin: 0 0 0 0;
 }
-#announcement p{
-    margin: 0;
-    padding: 10px;
-}
-#header{
-    width: 60%;
-    margin: 0 auto;
-}
 #page-container {
     position: relative;
     min-height: 100vh;
 }
-#preston{
-    background-color: #014421;
-    color: #F8F8FF;
-}
-#preston a{
-    color: #F8F8FF;
-}
+
 #page-heading{
     text-align: center;
     font-size: 1.3em;
     font-weight: 400;
-}
-#hero{
-    position:relative;
-    align-items: center;
-    
-}
-#hero-banner{
-    width: 100%;
-}
-#hero-subheading{
-    color: #111111;
-    margin: 5px 0 15px 0;
-    text-align: center;
 }
 #weather-summary{
     background-color: #90B494;
@@ -171,6 +190,17 @@ footer{
     max-width: 250px;
     margin: 15px 0 15px 20px ;
 }
+#temp{
+    display: inline-block;
+}
+
+
+/* footer section --------------------------------------------------------------------------*/
+footer{
+    background-color: #90B494;
+    color: #111111;
+    font-family: 'Open Sans', sans-serif;
+}
 #contact{
     width: 60%;
     text-align: center;
@@ -180,10 +210,6 @@ footer{
 #contact h3{
     text-align: center;
     padding: 5px;
-
-}
-#temp{
-    display: inline-block;
 }
 #map{
     height:150px;
@@ -191,8 +217,6 @@ footer{
     margin-left: auto;
     margin-right: auto;
     width: auto;
-    
-
 }
 #footer{
     background-color: #90B494;

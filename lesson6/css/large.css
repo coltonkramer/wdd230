@@ -1,6 +1,7 @@
 @media only screen and (min-width: 60em){
 main{
     width: 60%;
+    margin: 0 auto;
 }
  .navigation{
     display:flex;
@@ -68,6 +69,24 @@ main{
 #footer a{
     text-decoration: none;
     color: #111111;
+}
+#gallery{
+    grid-template-columns: repeat(3, 1fr);
+}
+#gallery picture{
+    margin: 10px;
+}
+#gallery img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#gallery picture:hover{
+    box-shadow:  0 0 50px #333;
+}
+#gallery p{
+    margin-left: 10px;
 }
 
 }
