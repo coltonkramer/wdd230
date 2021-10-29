@@ -139,7 +139,9 @@ main{
     filter: blur(0.2em);
 }
 .gallery-caption{
-    margin-left: 15px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 10px auto 10px auto;
+    text-align: center;
 }
 #announcement{
     font-family: 'Open Sans', sans-serif;
