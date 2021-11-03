@@ -15,16 +15,12 @@ table{
 }
 th[colspan]{
     background-color: #7fb9c2;
-}
-tr h1{
+    color: black;
     padding: 10px;
     margin: 0 auto;
 }
-thead tr{
+thead th{
     background-color: #628ca6;
-
-}
-tr h2{
     color: white;
     padding: 10px;
     margin: 0;
