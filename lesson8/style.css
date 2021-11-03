@@ -14,6 +14,7 @@ table{
 
 }
 th[colspan]{
+    font-size: 27px;
     background-color: #7fb9c2;
     color: black;
     padding: 10px;
