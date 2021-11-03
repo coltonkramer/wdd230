@@ -21,6 +21,7 @@ th[colspan]{
     margin: 0 auto;
 }
 thead th{
+    font-size: 18px;
     background-color: #628ca6;
     color: white;
     padding: 10px;
