@@ -86,4 +86,17 @@ main{
     box-shadow:  0 0 50px #333;
 }
 
+#storm-center-main{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+.storm-report{
+    width: 350px;
+    margin-right: 8em;
+}
+
+
 }

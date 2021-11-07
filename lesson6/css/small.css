@@ -196,6 +196,51 @@ main{
     display: inline-block;
 }
 
+/* storm center section ---------------------------------------------------------------------------*/
+.storm-report{
+    background-color: rgba(1, 68, 33, .6);
+    margin: 20px 0 0 0;
+    width: 100%;
+    
+}
+input::placeholder, input[type='date'], label{
+    color: #F8F8FF;
+}
+
+input{
+    padding: 3px;
+    margin: 15px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+
+}
+#sbutton{
+    background-color: #F8F8FF;
+    color: red;
+    border-radius: 5px;
+
+}
+#ratingvalue{
+    color: #F8F8FF;
+    margin-top: -15px;
+}
+#storm-report-text{
+    width: 95%;
+}
+#storm-center-main{
+    background-image: url('../../lesson8/pexels-jake-francis-325288.webp');
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+}
+form h2{
+    color: #F8F8FF;
+}
+#contact-info{
+    margin-top: 0;
+}
 
 /* footer section --------------------------------------------------------------------------*/
 footer{
