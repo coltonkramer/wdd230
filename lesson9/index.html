@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../lesson6/css/small.css">
+    <link rel="stylesheet" href="../lesson6/css/medium.css">
+    <link rel="stylesheet" href="../lesson6/css/large.css">
+    <script defer src="js/script.js"></script>
+    <title>Bear Lake Boogaloo Homepage</title>
+    <meta name="author" content="Colton Kramer">
+    <meta name="description" content="The home page of the bear lake boogaloo web/weather site">
+</head>
+<body>
+    <div id=announcement></div>
+    <header>
+        <div id="header">
+            <img class = "logo" src="../lesson6/images/bear-rune.png" alt="A slavic bear rune">
+            <h1>Bear Lake Boogaloo</h1>
+            <h2>"There's always something to do!"</h2>
+        </div>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href = "#">Home</a> </li>
+            <li class="active"><a  href = "preston-6.html">Preston</a> </li>
+            <li><a href = "#">Soda Springs</a> </li>
+            <li><a href = "#">Fish Haven</a> </li>
+            <li><a href = "../lesson8/stormcenter.html">Storm Center</a> </li>
+            <li><a href = "gallery-7.html">Gallery</a> </li>
+        </ul>
+    </nav>
+    <div id ="page-container">
+        <main>
+            
+            </main>
+            <footer>
+                <div id="contact">
+                    <img id="map" src="../lesson6/images/map.png" alt="map of preston id">
+                    <h3 class="page-subheading">Contact Information</h3>
+                    <p>Address: 123 blah st</p>
+                    <p>Phone: 222-222-2222</p>
+                    <p>Email: blahblah@blah.com</p>
+                </div>
+            <div id="footer">
+                <span id="current-full-date"></span> | Colton Kramer | North Carolina | <a href="https://www.byui.edu/online" 
+                > BYUI Online Learning</a>
+                <p id="lastmodified">Last Modified:</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Akronim',
+                    'Open Sans'
+                ]
+            }
+        });
+        </script>
+</body>
+</html>
