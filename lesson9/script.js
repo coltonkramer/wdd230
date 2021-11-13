@@ -11,17 +11,20 @@ display = (towns) => {
   for (let i = 0; i <= towns.length; i++) {
     let town = document.createElement("section");
     town.setAttribute("class", "town-info");
+
+    let townText = document.createElement("article");
+    townText.setAttribute("class", "town-text");
+
     let h3 = document.createElement("h3");
     let h4 = document.createElement("h4");
-    h3.setAttribute("class", "town-name")
-    h4.setAttribute("class", "town-name")
+    h3.setAttribute("class", "town-name");
+    h4.setAttribute("class", "town-name");
 
     h3.textContent = towns[i].name;
-    town.appendChild(h3);
-    console.log(h3);
+    townText.appendChild(h3);
 
     h4.textContent = towns[i].motto;
-    town.appendChild(h4);
+    townText.appendChild(h4);
 
     const year = document.createElement("p");
     year.textContent = "Year Founded: " + towns[i].yearFounded;
@@ -34,11 +37,12 @@ display = (towns) => {
     const image = document.createElement("img");
     image.setAttribute("src", "images/" + towns[i].photo);
     image.setAttribute("alt", towns[i].name);
-    image.setAttribute("class", 'homepage-image');
-    image.setAttribute("id", towns[i].yearFounded)
+    image.setAttribute("class", "homepage-image");
+    image.setAttribute("id", towns[i].yearFounded);
 
-    town.appendChild(year);
-    town.appendChild(population);
+    townText.appendChild(year);
+    townText.appendChild(population);
+    town.appendChild(townText);
     town.appendChild(image);
 
     if (
