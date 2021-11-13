@@ -241,6 +241,25 @@ form h2{
 #contact-info{
     margin-top: 0;
 }
+/* homepage section --------------------------------------------------------------------------*/
+#towns-header{
+    text-align: center;
+}
+.homepage-image{
+    width: 300px;
+    margin: 5px auto;
+}
+.town-info{
+    text-align: center;
+    border-bottom: 1px solid #014421;
+}
+#article-content{
+    text-align: center;
+}
+#hikes{
+    width:300px;
+}
+
 
 /* footer section --------------------------------------------------------------------------*/
 footer{
@@ -260,10 +279,10 @@ footer{
 }
 #map{
     height:150px;
-    padding: 5px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 15px;
+    margin-left: -60px;
     width: auto;
+
 }
 #footer{
     background-color: #90B494;
