@@ -22,5 +22,6 @@ function display(temp, icon){
 
     let imgSelector = document.querySelector('#icon')
     imgSelector.setAttribute('src', icon)
+    imgSelector.setAttribute('alt', 'Descriptive weather icon')
 }
 
