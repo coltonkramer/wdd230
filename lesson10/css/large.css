@@ -1,0 +1,128 @@
+@media only screen and (min-width: 60em){
+main{
+    width: 60%;
+    margin: 0 auto;
+}
+ .navigation{
+    display:flex;
+}
+ .navigation li:first-child{
+    display: none;
+}
+.navigation li{
+    display:block;
+    flex: 1 1 100%;
+} 
+.logo{
+    float: left;
+    padding: 5px;
+    margin:3px;
+    margin-left: 50px;
+}
+#forecast{
+    display: block;
+}
+#weather-summary{
+    background: rgba(1, 68, 33, .6);
+    padding: 5px;
+    float:left;
+    position: absolute;
+    left:50px;
+    top: 25px;
+    width: 40%;
+    font-size: .8em;
+}
+#hero-subheading, #weather-summary-list span{
+    color: #fff;
+}
+#picnic-family{
+    float: right;
+    margin: 10px;
+}
+#contact{
+    width: 60%;
+    text-align: right;
+    padding-bottom: 5px;
+    margin: 0 auto;
+}
+#contact h3{
+    text-align: right;
+    padding: 5px;
+
+}
+#map{
+    height:150px;
+    float: left;
+    padding: 5px;
+    margin: 10px;
+    width:auto;
+}
+#footer{
+    background-color: #90B494;
+    padding: 5px;
+    text-align: center;
+    font-weight: 400;
+    font-size: .75em;
+    width: 100%;
+    position: absolute;
+}
+#footer a{
+    text-decoration: none;
+    color: #111111;
+}
+#gallery{
+    grid-template-columns: repeat(3, 1fr);
+}
+#gallery figure{
+    margin: 10px;
+}
+#gallery img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#gallery figure:hover{
+    box-shadow:  0 0 50px #333;
+}
+
+#storm-center-main{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+.storm-report{
+    width: 350px;
+    margin-right: 8em;
+}
+
+#town-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+}
+.town-info{
+    padding: 5px 25px;
+    height: 450px;
+    display: grid;
+    grid-template-rows: 1fr 2fr 2fr;
+    align-items: center;
+
+}
+.town-name{
+    grid-column-start: 1;
+}
+.homepage-image{
+    width: 200px;
+    height: 150px;
+    margin: 5px;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+
+}

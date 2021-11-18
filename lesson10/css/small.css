@@ -1,0 +1,299 @@
+/* body and other general styles -------------------------------------------------*/
+body{
+    background-color: #F8F8FF;
+    width: 100%;
+    margin: auto;
+    font-size: 18px;
+    overflow-x: hidden;
+}
+h1{
+    font-family: 'Akronim';
+    font-size: 2.5em;
+    color:#014421;
+    padding: 10px;
+    margin: 3px;
+}
+h2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    color:#111111
+}
+/* header and hero area ------------------------------------------------------------------*/
+header{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #90B494;
+    padding: 5px;
+}
+nav{
+    background-color: #90B494;
+}
+#announcement p{
+    margin: 0;
+    padding: 10px;
+}
+#header{
+    width: 100%;
+    margin: 0 auto;
+}
+.navigation li:first-child{
+    display: block;   
+}
+.navigation{
+    list-style: none;
+    background-color: #90B494;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.navigation li{
+    text-align: center;
+    display: none;
+    padding: 5px 0 5px 0;
+    
+}
+.navigation li:hover{
+    background-color: #014421;
+    width: 100%;
+}
+.navigation a{
+    display: block;
+    color: #111111;
+    text-decoration: none;
+    padding: 5px;
+    justify-content: space-evenly;
+}
+.navigation a:hover{
+    color:#fff;
+}
+.logo{
+    align-items: center;
+    padding: 5px;
+    margin: 10px;
+}
+#hero{
+    position:relative;
+    align-items: center;
+    
+}
+#hero-banner{
+    width: 100%;
+}
+#hero-subheading{
+    color: #111111;
+    margin: 5px 0 15px 0;
+    text-align: center;
+}
+/* main content --------------------------------------------------------------------*/
+main{
+    font-family: 'Open Sans', sans-serif;
+    margin: auto;
+    padding-bottom: 2.5rem;
+    width: 100%;    
+}
+.responsive li{
+    display:block;
+}
+.page-subheading{
+    text-align: center;
+}
+.summary-item-left{
+    text-align: right;
+    margin-right: 5px;
+}
+.days{
+    color: #F8F8FF;
+    background-color:#014421;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    border:1px solid black;
+}
+.day{
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+}
+.active{
+    background-color: #014421;
+}
+.active a{
+    color: #F8F8FF;
+}
+#gallery{
+    display: grid;
+    grid-template-columns:1fr;
+}
+#gallery-header{
+    text-align: center;
+}
+.gallery-pictures{
+    filter: blur(0em);
+    transition: filter 0.5s;
+    margin: 15px;
+    padding: 5px;
+    
+}
+.gallery-pictures[data-src] {
+    filter: blur(0.2em);
+}
+.gallery-caption{
+    font-family: 'Open Sans', sans-serif;
+    margin: 10px auto 10px auto;
+    text-align: center;
+}
+#announcement{
+    font-family: 'Open Sans', sans-serif;
+    background-color: yellow;
+    text-align: center;
+    margin: 0 0 0 0;
+}
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#page-heading{
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+#weather-summary{
+    background-color: #90B494;
+    
+    padding: 10px;
+    width: 300px;
+    margin:0 auto;
+}
+#weather-summary-list{
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#weather-summary-list span{
+    list-style: none;
+    color: #111111;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#forecast{
+    width: 100%;
+    overflow: auto;
+    border:1px solid black;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: none;
+}
+#articles-title{
+    margin-bottom: 0;
+}
+#picnic-family{
+    max-width: 250px;
+    margin: 15px 0 15px 20px ;
+}
+#temp{
+    display: inline-block;
+}
+
+/* storm center section ---------------------------------------------------------------------------*/
+.storm-report{
+    background-color: rgba(1, 68, 33, .6);
+    margin: 20px 0 0 0;
+    width: 100%;
+    
+}
+input::placeholder, input[type='date'], label{
+    color: #F8F8FF;
+}
+
+input{
+    padding: 3px;
+    margin: 15px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+
+}
+#sbutton{
+    background-color: #F8F8FF;
+    color: red;
+    border-radius: 5px;
+
+}
+#ratingvalue{
+    color: #F8F8FF;
+    margin-top: -15px;
+}
+#storm-report-text{
+    width: 95%;
+}
+#storm-center-main{
+    background-image: url('../../lesson8/pexels-jake-francis-325288.webp');
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+}
+form h2{
+    color: #F8F8FF;
+}
+#contact-info{
+    margin-top: 0;
+}
+/* homepage section --------------------------------------------------------------------------*/
+#towns-header{
+    text-align: center;
+}
+.homepage-image{
+    width: 300px;
+    margin: 5px auto;
+}
+.town-info{
+    text-align: center;
+    border-bottom: 1px solid #014421;
+}
+#article-content{
+    text-align: center;
+}
+#hikes{
+    width:300px;
+}
+
+
+/* footer section --------------------------------------------------------------------------*/
+footer{
+    background-color: #90B494;
+    color: #111111;
+    font-family: 'Open Sans', sans-serif;
+}
+#contact{
+    width: 60%;
+    text-align: center;
+    padding-bottom: 5px;
+    margin: 0 auto;
+}
+#contact h3{
+    text-align: center;
+    padding: 5px;
+}
+#map{
+    height:150px;
+    padding: 15px;
+    margin-left: -60px;
+    width: auto;
+
+}
+#footer{
+    background-color: #90B494;
+    padding: 5px;
+    text-align: center;
+    font-weight: 400;
+    font-size: .75em;
+    width: 100%;
+    position: absolute;
+}
+#footer a{
+    text-decoration: none;
+    color: #111111;
+}
