@@ -9,6 +9,8 @@ fetch(apiURL)
     let temp = Math.floor(convertTemp(weatherData.main.temp));
     let highTemp = Math.floor(convertTemp(weatherData.main.temp_max));
     let lowTemp = Math.floor(convertTemp(weatherData.main.temp_min));
+    let date = weatherData['dt']
+    console.log(date)
 
     let icon =
       "https://openweathermap.org/img/w/" +
