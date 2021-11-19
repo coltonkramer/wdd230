@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/large.css" />
     <script defer src="js/script.js"></script>
     <script defer src="js/weatherapi.js"></script>
+    <script defer src="js/forcast.js"></script>
     <title>Bear Lake Boogaloo Homepage</title>
     <meta name="author" content="Colton Kramer" />
     <meta
@@ -29,7 +30,7 @@
       <ul class="navigation">
         <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
         <li><a href="../lesson9/index.html">Home</a></li>
-        <li class="active"><a href="preston-6.html">Preston</a></li>
+        <li class="active"><a href="preston-10.html">Preston</a></li>
         <li><a href="#">Soda Springs</a></li>
         <li><a href="#">Fish Haven</a></li>
         <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
@@ -77,27 +78,27 @@
             <div class="day">
               <span>Monday</span><br />
               <span>☀️</span><br />
-              <span>76&#176;F</span>
+              <span id="temp0"></span>
             </div>
             <div class="day">
               <span>Tuesday</span><br />
               <span>☀️</span><br />
-              <span>76&#176;F</span>
+              <span id="temp1"></span>
             </div>
             <div class="day">
               <span>Wednesday</span><br />
               <span>☀️</span><br />
-              <span>76&#176;F</span>
+              <span id="temp2"></span>
             </div>
             <div class="day">
               <span>Thursday</span><br />
               <span>☀️</span><br />
-              <span>76&#176;F</span>
+              <span id="temp3"></span>
             </div>
             <div class="day">
               <span>Friday</span><br />
               <span>☀️</span><br />
-              <span>76&#176;F</span>
+              <span id="temp4"></span>
             </div>
           </div>
         </div>

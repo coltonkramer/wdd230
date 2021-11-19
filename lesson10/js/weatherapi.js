@@ -3,27 +3,19 @@ const apiURL =
 fetch(apiURL)
   .then((response) => response.json())
   .then((weatherData) => {
-    console.log(weatherData);
 
     let description = weatherData.weather[0]["main"];
     let temp = Math.floor(convertTemp(weatherData.main.temp));
     let highTemp = Math.floor(convertTemp(weatherData.main.temp_max));
     let lowTemp = Math.floor(convertTemp(weatherData.main.temp_min));
-    let date = weatherData['dt']
-    console.log(date)
-
-    let icon =
-      "https://openweathermap.org/img/w/" +
-      weatherData.weather[0]["icon"] +
-      ".png";
     let windSpeed = weatherData.wind.speed.toFixed(1);
-    let windChill = getWindChill(temp, windSpeed)
-    let humidity = weatherData.main.humidity
+    let windChill = getWindChill(temp, windSpeed);
+    let humidity = weatherData.main.humidity;
 
-    display(description, temp, highTemp, lowTemp, icon, windChill, windSpeed, humidity);
+    display(description, temp, highTemp, lowTemp, windChill, windSpeed, humidity);
   });
 
-  function display(description, temp, highTemp, lowTemp, icon, windChill, windSpeed, humidity) {
+  function display(description, temp, highTemp, lowTemp, windChill, windSpeed, humidity) {
     let descriptionSelector = document.querySelector("#currently");
     descriptionSelector.textContent = description;
     
@@ -47,14 +39,6 @@ fetch(apiURL)
     
     let humidSelector = document.querySelector("#humidity");
     humidSelector.textContent = humidity + '%';
-    
-    let linkSelector = document.querySelector("#imagesrc");
-    linkSelector.textContent = icon;
-    
-    
-    let imgSelector = document.querySelector("#icon");
-    imgSelector.setAttribute("src", icon);
-    imgSelector.setAttribute("alt", "Descriptive weather icon");
   }
 
   function convertTemp(temperature) {
@@ -69,4 +53,3 @@ fetch(apiURL)
       return 'N/A'
     }
   }
-  
