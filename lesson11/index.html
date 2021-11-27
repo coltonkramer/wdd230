@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <script defer src="js/homepage-script.js"></script>
+    <script defer src="../lesson6/js/script.js"></script>
+    <title>Bear Lake Boogaloo Homepage</title>
+    <meta name="author" content="Colton Kramer" />
+    <meta
+      name="description"
+      content="The home page of the bear lake boogaloo web/weather site"
+    />
+  </head>
+  <body>
+    <div id="announcement"></div>
+    <header>
+      <div id="header">
+        <img
+          class="logo"
+          src="../lesson6/images/bear-rune.png"
+          alt="A slavic bear rune"
+        />
+        <h1>Bear Lake Boogaloo</h1>
+        <h2>"There's always something to do!"</h2>
+      </div>
+    </header>
+    <nav>
+      <ul class="navigation">
+        <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li><a href="soda-springs.html">Soda Springs</a></li>
+        <li><a href="fish-haven.html">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <div id="page-container">
+      <main>
+        <h2 id="towns-header">Towns in the Area</h2>
+        <div id="town-container"></div>
+        <section>
+          <article id="article-content">
+            <h3>maecenas volutpat blandit aliquam etiam</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <img
+              id="hikes"
+              src="../images/hikes.png"
+              alt="family having a picnic"
+            />
+          </article>
+        </section>
+      </main>
+      <footer>
+        <div id="contact">
+          <img
+            id="map"
+            src="../lesson6/images/map.png"
+            alt="map of preston id"
+          />
+          <h3 class="page-subheading">Contact Information</h3>
+          <p>Address: 123 blah st</p>
+          <p>Phone: 222-222-2222</p>
+          <p>Email: blahblah@blah.com</p>
+        </div>
+        <div id="footer">
+          <span id="current-full-date"></span> | Colton Kramer | North Carolina
+          | <a href="https://www.byui.edu/online"> BYUI Online Learning</a>
+          <p id="lastmodified">Last Modified:</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Akronim", "Open Sans"],
+        },
+      });
+    </script>
+  </body>
+</html>

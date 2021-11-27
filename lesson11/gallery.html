@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script defer src="js/script.js"></script>
+    <script defer src="js/lazyload.js"></script>
+    <script defer src="js/days-between.js"></script>
+    <title>Bear Lake Boogaloo Homepage</title>
+    <meta name="author" content="Colton Kramer">
+    <meta name="description" content="The home page of the bear lake boogaloo web/weather site">
+</head>
+<body>
+    <header>
+        <div id="header">
+            <img class = "logo" src="images/bear-rune.png" alt="A slavic bear rune">
+            <h1>Bear Lake Boogaloo</h1>
+            <h2>"There's always something to do!"</h2>
+        </div>
+    </header>
+    <nav>
+        <ul class="navigation">
+          <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="preston.html">Preston</a></li>
+          <li><a href="soda-springs.html">Soda Springs</a></li>
+          <li><a href="fish-haven.html">Fish Haven</a></li>
+          <li><a href="stormcenter.html">Storm Center</a></li>
+          <li class="active"><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+<main>
+
+    <h2 id="gallery-header">Gallery</h2>
+    <div id="gallery">
+
+        <figure>
+            <img src="gallery-images/Placeholder.webp" data-src="gallery-images/pexels-andrew-beatson-3742711.webp" alt="Grey stormy cloud" class="gallery-pictures">
+            <figcaption class="gallery-caption">Grey stormy skies</figcaption>
+        </figure>
+        <figure>
+            <img src="gallery-images/Placeholder.webp" data-src="gallery-images/pexels-brett-sayles-1431822.webp" alt="Sunlight" class="gallery-pictures">
+            <figcaption class="gallery-caption">Sunlight through clouds</figcaption>
+        </figure>
+        <figure>
+            <img src="gallery-images/Placeholder.webp" data-src="gallery-images/pexels-eberhard-grossgasteiger-4067893.webp" alt="Snow" class="gallery-pictures">
+            <figcaption class="gallery-caption">Snowy mountain</figcaption>
+        </figure>
+        <figure>
+            <img src="gallery-images/Placeholder.webp" data-src="gallery-images/pexels-george-desipris-753619.webp" alt="Tsunami on beach" class="gallery-pictures">
+            <figcaption class="gallery-caption">Tsunami</figcaption>
+        </figure>
+        <figure>
+            <img src="gallery-images/Placeholder.webp" data-src="gallery-images/pexels-james-wheeler-1542495.webp" alt="Double rainbow in the sky" class="gallery-pictures">
+            <figcaption class="gallery-caption">Double rainbow</figcaption>
+        </figure>
+        <figure>
+            <img src="gallery-images/Placeholder.webp" data-src="gallery-images/pexels-pixabay-76969.webp" alt="Hurricane from space" class="gallery-pictures">
+            <figcaption class="gallery-caption">Hurricane</figcaption>
+        </figure>
+        <figure>
+            <img src="gallery-images/Placeholder.webp" data-src="gallery-images/pexels-ralph-w-lambrecht-1446076.webp" alt="Tornado and lightning" class="gallery-pictures">
+            <figcaption class="gallery-caption">Tornado</figcaption>
+        </figure>
+        <figure>
+            <img src="gallery-images/Placeholder.webp" data-src="gallery-images/pexels-rodrigo-souza-2531709.webp" alt="Lightning" class="gallery-pictures">
+            <figcaption class="gallery-caption">Lightning in dark sky</figcaption>
+        </figure>
+        <figure>
+            <img src="gallery-images/Placeholder.webp" data-src="gallery-images/pexels-skitterphoto-3768.webp" alt="Sunny day in the neighborhood" class="gallery-pictures">
+            <figcaption class="gallery-caption">Sunny day</figcaption>
+        </figure>
+    </div>
+    
+</main>
+
+<footer>
+    <div id="contact">
+        <img id="map" src="images/map.png" alt="map of preston id">
+            <h3 class="page-subheading">Contact Information</h3>
+            <p>Address: 123 blah st</p>
+            <p>Phone: 222-222-2222</p>
+            <p>Email: blahblah@blah.com</p>
+        </div>
+    <div id="footer">
+        <span id="current-full-date"></span> | Colton Kramer | North Carolina | <a href="https://www.byui.edu/online" 
+        > BYUI Online Learning</a>
+                <p>Last Modified: <span id="lastmodified"></span> | <span id="lastvisited"></span> days since last visited </p> 
+            </div>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Akronim',
+                    'Open Sans'
+                ]
+            }
+        });
+        </script>
+    </body>
+</html>

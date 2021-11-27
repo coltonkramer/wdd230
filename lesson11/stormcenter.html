@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <script defer src="../lesson6/js/script.js"></script>
+    <title>Bear Lake Boogaloo Homepage</title>
+    <meta name="author" content="Colton Kramer" />
+    <meta name="description" content="The home page of the bear lake boogaloo web/weather site" />
+</head>
+
+<body>
+    <div id="announcement"></div>
+    <header>
+        <div id="header">
+            <img class="logo" src="../lesson6/images/bear-rune.png" alt="A slavic bear rune" />
+            <h1>Bear Lake Boogaloo</h1>
+            <h2>"There's always something to do!"</h2>
+        </div>
+    </header>
+    <nav>
+        <ul class="navigation">
+          <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="preston.html">Preston</a></li>
+          <li><a href="soda-springs.html">Soda Springs</a></li>
+          <li><a href="fish-haven.html">Fish Haven</a></li>
+          <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    <div id="page-container">
+        <main id="storm-center-main">
+            <form class="storm-report">
+                <fieldset>
+                    <h2>Storm Report Form</h2>
+                    <input type="text" name="full-name" required pattern="[A-Za-z]" placeholder="Full name"
+                        minlength="5" /><br>
+                    <input type="email" name="e-mail" required placeholder="myemail@example.com" /><br>
+                    <input type="tel" name="phone" required placeholder="123-456-7890" /><br>
+                    <input type="date" name="date" required /><br>
+                    <input list="storm-type" placeholder="Storm type" /><br>
+                    <datalist id="storm-type">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                        <option value="Blizzard"></option>
+                    </datalist>
+                    <label for="rating">Rate the storm severity</label><br>
+                    <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
+                        oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" />
+                    <span id="ratingvalue">5</span><br>
+                    <datalist id="tickmarks">
+                        <option value="0"></option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                        <option value="5"></option>
+                        <option value="6"></option>
+                        <option value="7"></option>
+                        <option value="8"></option>
+                        <option value="9"></option>
+                        <option value="10"></option>
+                    </datalist>
+
+                    <input list="location" placeholder="Storm Region" /><br>
+                    <datalist id="location">
+                        <option value="Preston"></option>
+                        <option value="Soda Springs"></option>
+                        <option value="Fish Haven"></option>
+                    </datalist>
+
+                    <label>Are you in danger?</label><br>
+                    <label><input type="radio" name="yes" value="yes" class="danger-level" />Yes</label>
+                    <label><input type="radio" name="no" value="no" class="danger-level" />No</label>
+                    <label><input type="radio" name="maybe" value="maybe" class="danger-level" />Maybe</label><br>
+                    <textarea id="storm-report-text" name="comments" placeholder="Any additional information is encouraged"></textarea><br>
+                    <input id = sbutton type="submit" value="Report the storm" />
+                </fieldset>
+            </form>
+        </main>
+        <footer>
+            <div id="contact">
+                <img id="map" src="../lesson6/images/map.png" alt="map of preston id" />
+                <h3 class="page-subheading" id="contact-info">Contact Information</h3>
+                <p>Address: 123 blah st</p>
+                <p>Phone: 222-222-2222</p>
+                <p>Email: blahblah@blah.com</p>
+            </div>
+            <div id="footer">
+                <span id="current-full-date"></span> | Colton Kramer | North Carolina
+                | <a href="https://www.byui.edu/online"> BYUI Online Learning</a>
+                <p id="lastmodified">Last Modified:</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ["Akronim", "Open Sans"],
+            },
+        });
+    </script>
+</body>
+
+</html>
