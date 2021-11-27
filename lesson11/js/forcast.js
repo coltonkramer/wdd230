@@ -6,7 +6,6 @@ fetch(apiURL1)
 
   const noon =  weatherData.list.filter(x => x.dt_txt.includes('18:00:00'))
   forecast(noon)
-  console.log(noon)
 })
 
 function forecast(noon) {
@@ -14,8 +13,6 @@ function forecast(noon) {
     noon.forEach((i,j) => document.querySelector('#day' + j).textContent = getDay(new Date(i.dt_txt).getDay()))
     noon.forEach((i,j) => document.querySelector('#icon' + j).setAttribute('src', getIcon(i.weather[0].icon)))
     noon.forEach((i,j) => document.querySelector('#icon' + j).setAttribute('alt', getIcon(i.weather[0].icon)))
-
-
 }
 
 function getDay(day){
