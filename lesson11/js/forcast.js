@@ -13,6 +13,8 @@ function forecast(noon) {
     noon.forEach((i,j) => document.querySelector('#temp' + j).textContent = i.main.temp + '°F')
     noon.forEach((i,j) => document.querySelector('#day' + j).textContent = getDay(new Date(i.dt_txt).getDay()))
     noon.forEach((i,j) => document.querySelector('#icon' + j).setAttribute('src', getIcon(i.weather[0].icon)))
+    noon.forEach((i,j) => document.querySelector('#icon' + j).setAttribute('alt', getIcon(i.weather[0].icon)))
+
 
 }
 
