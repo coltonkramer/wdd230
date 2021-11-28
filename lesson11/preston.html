@@ -10,12 +10,11 @@
     <link rel="stylesheet" href="css/large.css" />
     <script defer src="js/script.js"></script>
     <script defer src="js/weatherapi.js"></script>
-    <script defer src="js/forcast.js"></script>
     <title>Bear Lake Boogaloo Homepage</title>
     <meta name="author" content="Colton Kramer" />
     <meta
-      name="description"
-      content="The home page of the bear lake boogaloo web/weather site"
+    name="description"
+    content="The home page of the bear lake boogaloo web/weather site"
     />
   </head>
   <body>
@@ -44,13 +43,13 @@
         <div id="hero">
           <figure class="responsive-hero-banner">
             <img
-              id="hero-banner"
-              alt="Mountain and Lake in Idaho"
-              src="images/hero-banner-pic-crop.jpg"
-              sizes="60vw"
-              srcset="
-                images\hero-banner-pic-crop-400.webp   400w,
-                images\hero-banner-pic-crop-850.webp  850w,
+            id="hero-banner"
+            alt="Mountain and Lake in Idaho"
+            src="images/hero-banner-pic-crop.jpg"
+            sizes="60vw"
+            srcset="
+            images\hero-banner-pic-crop-400.webp   400w,
+            images\hero-banner-pic-crop-850.webp  850w,
                 images\hero-banner-pic-crop-1500.webp 1000w,
               "
             />
@@ -103,14 +102,14 @@
             </div>
           </div>
         </div>
-
+        
         <h3 class="page-subheading">Articles</h3>
         <div id="articles">
           <h4 id="articles-title">Lorem ipsum dolor sit amet</h4>
           <img
-            id="picnic-family"
-            src="images/pexels-kampus-production-7669130.webp"
-            alt="family having a picnic"
+          id="picnic-family"
+          src="images/pexels-kampus-production-7669130.webp"
+          alt="family having a picnic"
           />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -138,7 +137,7 @@
         </div>
       </footer>
     </div>
-
+    
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
       WebFont.load({
@@ -146,6 +145,11 @@
           families: ["Akronim", "Open Sans"],
         },
       });
+      </script>
+    <script src="js/forcast.js"></script>
+    <script>
+      getForecast("5604473")
     </script>
-  </body>
+
+</body>
 </html>

@@ -73,7 +73,12 @@ nav{
 #hero{
     position:relative;
     align-items: center;
+    width: 100%;
     
+}
+.responsive-hero-banner{
+    width: 100%;
+    margin: 0 auto;
 }
 #hero-banner{
     width: 100%;
