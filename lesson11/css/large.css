@@ -109,9 +109,13 @@ main{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 0 auto;
+    align-items: center;
+}
+.town-text{
+    height: 215px;
 }
 .town-info{
-    padding: 5px 25px;
+    width: 90%;
     height: 450px;
     display: grid;
     grid-template-rows: 1fr 2fr 2fr;
@@ -122,14 +126,38 @@ main{
     grid-column-start: 1;
 }
 .homepage-image{
-    width: 200px;
-    height: 150px;
-    margin: 5px;
+    width: 90%;
+    height: 180px;
+    margin: 5px auto;
     padding: 5px;
-    margin-left: auto;
-    margin-right: auto;
     align-items: center;
 }
-
+#article-content{
+    position: relative;
+}
+#hikes-text{
+    text-align: justify;
+}
+#hikes-iamge-container{
+    position: absolute;
+    float: right;
+    margin: 5px;
+}
+#contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0 auto;
+}
+#contact-info-container{
+    padding: 10px;
+    margin-left: 25px;
+}
+#map{
+    margin-right: 25px;
+}
 
 }

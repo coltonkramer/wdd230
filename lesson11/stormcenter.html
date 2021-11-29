@@ -38,14 +38,19 @@
     <div id="page-container">
         <main id="storm-center-main">
             <form class="storm-report">
-                <fieldset>
-                    <h2>Storm Report Form</h2>
-                    <input type="text" name="full-name" required pattern="[A-Za-z]" placeholder="Full name"
+                <fieldset id="storm-report-field-set">
+                    <h2 id="storm-center-h2-style">Storm Report Form</h2>
+                    <label for="">Full Name</label>
+                    <input type="text" name="full-name" id="full-name" required pattern="[A-Za-z]" placeholder="Full name"
                         minlength="5" /><br>
-                    <input type="email" name="e-mail" required placeholder="myemail@example.com" /><br>
-                    <input type="tel" name="phone" required placeholder="123-456-7890" /><br>
-                    <input type="date" name="date" required /><br>
-                    <input list="storm-type" placeholder="Storm type" /><br>
+                    <label for="email">Email</label><br>
+                    <input type="email" name="e-mail" id="email" required placeholder="myemail@example.com" /><br>
+                    <label for="phone">Phone Number</label><br>
+                    <input type="tel" name="phone" id="phone" required placeholder="123-456-7890" /><br>
+                    <label for="date">Date</label><br>
+                    <input type="date" name="date" id="date" required /><br>
+                    <label for="storm-type">Storm Type</label><br>
+                    <input list="storm-type" id="storm-type"placeholder="Storm type" /><br>
                     <datalist id="storm-type">
                         <option value="Flash Flood"></option>
                         <option value="Hail"></option>
@@ -71,37 +76,42 @@
                         <option value="9"></option>
                         <option value="10"></option>
                     </datalist>
-
-                    <input list="location" placeholder="Storm Region" /><br>
+                    <label for="location">Location of Storm</label><br>
+                    <input list="location" id="location"placeholder="Storm Region" /><br>
                     <datalist id="location">
                         <option value="Preston"></option>
                         <option value="Soda Springs"></option>
                         <option value="Fish Haven"></option>
                     </datalist>
-
                     <label>Are you in danger?</label><br>
                     <label><input type="radio" name="yes" value="yes" class="danger-level" />Yes</label>
                     <label><input type="radio" name="no" value="no" class="danger-level" />No</label>
                     <label><input type="radio" name="maybe" value="maybe" class="danger-level" />Maybe</label><br>
-                    <textarea id="storm-report-text" name="comments" placeholder="Any additional information is encouraged"></textarea><br>
+                    <textarea id="storm-report-text" id="add-info"name="comments" placeholder="Please add any additional information here"></textarea><br>
                     <input id = sbutton type="submit" value="Report the storm" />
                 </fieldset>
             </form>
         </main>
         <footer>
             <div id="contact">
-                <img id="map" src="../lesson6/images/map.png" alt="map of preston id" />
-                <h3 class="page-subheading" id="contact-info">Contact Information</h3>
-                <p>Address: 123 blah st</p>
-                <p>Phone: 222-222-2222</p>
-                <p>Email: blahblah@blah.com</p>
+              <img
+                id="map"
+                src="../lesson6/images/map.png"
+                alt="map of preston id"
+              />
+              <div id="contact-info-container">
+                <h3 class="page-subheading">Contact Information</h3>
+                <p class="contact-info"><strong>Address:</strong> 123 blah st</p>
+                <p class="contact-info"><strong>Phone:</strong> 222-222-2222</p>
+                <p class="contact-info"><strong>Email:</strong> blahblah@blah.com</p>
+              </div>
             </div>
             <div id="footer">
-                <span id="current-full-date"></span> | Colton Kramer | North Carolina
-                | <a href="https://www.byui.edu/online"> BYUI Online Learning</a>
-                <p id="lastmodified">Last Modified:</p>
+              <span id="current-full-date"></span> | Colton Kramer | North Carolina
+              | <a href="https://www.byui.edu/online"> BYUI Online Learning</a>
+              <p id="lastmodified">Last Modified:</p>
             </div>
-        </footer>
+          </footer>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>

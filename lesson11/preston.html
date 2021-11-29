@@ -9,12 +9,11 @@
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" />
     <script defer src="js/script.js"></script>
-    <script defer src="js/weatherapi.js"></script>
     <title>Bear Lake Boogaloo Homepage</title>
     <meta name="author" content="Colton Kramer" />
     <meta
-    name="description"
-    content="The home page of the bear lake boogaloo web/weather site"
+      name="description"
+      content="The home page of the bear lake boogaloo web/weather site"
     />
   </head>
   <body>
@@ -43,14 +42,14 @@
         <div id="hero">
           <figure class="responsive-hero-banner">
             <img
-            id="hero-banner"
-            alt="Mountain and Lake in Idaho"
-            src="images/hero-banner-pic-crop.jpg"
-            sizes="60vw"
-            srcset="
-            images\hero-banner-pic-crop-400.webp   400w,
-            images\hero-banner-pic-crop-850.webp  850w,
-                images\hero-banner-pic-crop-1500.webp 1000w,
+              id="hero-banner"
+              alt="Mountain and Lake in Idaho"
+              src="images/hero-banner-pic-crop.jpg"
+              sizes="60vw"
+              srcset="
+                images\hero-banner-pic-crop-400.webp   400w,
+                images\hero-banner-pic-crop-850.webp   850w,
+                images\hero-banner-pic-crop-1500.webp 1000w
               "
             />
           </figure>
@@ -77,43 +76,51 @@
           <div class="days">
             <div class="day">
               <span id="day0">Monday</span><br />
-              <img id="icon0"><br />
+              <img id="icon0" /><br />
               <span id="temp0"></span>
             </div>
             <div class="day">
               <span id="day1">Tuesday</span><br />
-              <img id="icon1"><br />
+              <img id="icon1" /><br />
               <span id="temp1"></span>
             </div>
             <div class="day">
               <span id="day2">Wednesday</span><br />
-              <img id="icon2"><br />
+              <img id="icon2" /><br />
               <span id="temp2"></span>
             </div>
             <div class="day">
-              <span id="day3">Thursday</span><br/>
-              <img id="icon3"><br/>
+              <span id="day3">Thursday</span><br />
+              <img id="icon3" /><br />
               <span id="temp3"></span>
             </div>
             <div class="day">
               <span id="day4">Friday</span><br />
-              <img id="icon4" src="https://openweathermap.org/img/w/13d.png"><br />
+              <img
+                id="icon4"
+                src="https://openweathermap.org/img/w/13d.png"
+              /><br />
               <span id="temp4"></span>
             </div>
           </div>
         </div>
-        
+
         <h3 class="page-subheading">Articles</h3>
         <div id="articles">
           <h4 id="articles-title">Lorem ipsum dolor sit amet</h4>
           <img
-          id="picnic-family"
-          src="images/pexels-kampus-production-7669130.webp"
-          alt="family having a picnic"
+            id="picnic-family"
+            src="images/pexels-kampus-production-7669130.webp"
+            alt="family having a picnic"
           />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat. Duis aute irure dolor in
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
@@ -124,11 +131,17 @@
       </main>
       <footer>
         <div id="contact">
-          <img id="map" src="images/map.png" alt="map of preston id" />
-          <h3 class="page-subheading">Contact Information</h3>
-          <p>Address: 123 blah st</p>
-          <p>Phone: 222-222-2222</p>
-          <p>Email: blahblah@blah.com</p>
+          <img
+            id="map"
+            src="../lesson6/images/map.png"
+            alt="map of preston id"
+          />
+          <div id="contact-info-container">
+            <h3 class="page-subheading">Contact Information</h3>
+            <p class="contact-info"><strong>Address:</strong> 123 blah st</p>
+            <p class="contact-info"><strong>Phone:</strong> 222-222-2222</p>
+            <p class="contact-info"><strong>Email:</strong> blahblah@blah.com</p>
+          </div>
         </div>
         <div id="footer">
           <span id="current-full-date"></span> | Colton Kramer | North Carolina
@@ -137,7 +150,7 @@
         </div>
       </footer>
     </div>
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
       WebFont.load({
@@ -145,11 +158,12 @@
           families: ["Akronim", "Open Sans"],
         },
       });
-      </script>
-    <script src="js/forcast.js"></script>
-    <script>
-      getForecast("5604473")
     </script>
-
-</body>
+    <script src="js/forcast.js"></script>
+    <script src="js/weatherapi.js"></script>
+    <script>
+      getForecast("5604473");
+      getWeather("5604473");
+    </script>
+  </body>
 </html>

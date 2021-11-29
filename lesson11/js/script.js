@@ -31,8 +31,6 @@ if(day == 'Friday'){
     announcement();
 }
 
-
-
 function adjustRating(rating) {
     document.getElementById("ratingvalue").innerHTML = rating;
 }

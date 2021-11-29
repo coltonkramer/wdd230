@@ -54,14 +54,19 @@ body{
 #contact{
     display: flex;
     align-items: center;
-    flex-direction: column;
+    justify-content: space-evenly;
+    flex-direction: row;
     width: 100%;
     padding: 10px 0;
-    margin: 0;
+    margin: 0 auto;
+}
+#contact-info-container{
+    padding: 10px;
 }
 #footer{
     width: 100%;
     padding: 10px 0;
     margin: 0;
 }
+
 }

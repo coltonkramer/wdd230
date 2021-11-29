@@ -1,9 +1,11 @@
-const apiURL =
-  "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=953336065a7c8c590044bd8c972cc6b6";
-fetch(apiURL)
+const getWeather = async (cityId) => {
+  const apiURL =
+  "https://api.openweathermap.org/data/2.5/weather?id=" + cityId + "&appid=953336065a7c8c590044bd8c972cc6b6";
+
+  fetch(apiURL)
   .then((response) => response.json())
   .then((weatherData) => {
-
+    
     let description = weatherData.weather[0]["main"];
     let temp = Math.floor(convertTemp(weatherData.main.temp));
     let highTemp = Math.floor(convertTemp(weatherData.main.temp_max));
@@ -11,9 +13,10 @@ fetch(apiURL)
     let windSpeed = weatherData.wind.speed.toFixed(1);
     let windChill = getWindChill(temp, windSpeed);
     let humidity = weatherData.main.humidity;
-
+    
     display(description, temp, highTemp, lowTemp, windChill, windSpeed, humidity);
   });
+}
 
   function display(description, temp, highTemp, lowTemp, windChill, windSpeed, humidity) {
     let descriptionSelector = document.querySelector("#currently");
