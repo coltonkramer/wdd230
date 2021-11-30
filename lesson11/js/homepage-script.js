@@ -7,9 +7,10 @@ fetch(url)
     display(towns);
   });
 
-display = (towns) => {
+// display = (towns) => {
+  function display(towns){
   for (let i = 0; i <= towns.length; i++) {
-    if (towns[i] === 0 || towns[i] === 2 || towns[i] === 6) {
+    if (towns[i].name === 'Preston' || towns[i].name === 'Soda Springs' || towns[i].name === 'Fish Haven') {
       let town = document.createElement("section");
       town.setAttribute("class", "town-info");
 
