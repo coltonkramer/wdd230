@@ -124,9 +124,14 @@ main{
 .active a{
     color: #F8F8FF;
 }
+#gallery-main{
+    width: 90%;
+}
 #gallery{
     display: grid;
     grid-template-columns:1fr;
+    margin: 0 auto;
+    width: 80%;
 }
 #gallery-header{
     text-align: center;
@@ -138,6 +143,7 @@ main{
     padding: 5px;
     
 }
+
 .gallery-pictures[data-src] {
     filter: blur(0.2em);
 }
@@ -229,9 +235,6 @@ input{
 }
 #storm-report-text{
     width: 95%;
-}
-#storm-report-field-set{
-    
 }
 #storm-center-main{
     background-image: url('../../lesson8/pexels-jake-francis-325288.webp');
