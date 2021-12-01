@@ -206,6 +206,12 @@ main{
     display: inline-block;
 }
 
+#current-events{
+    text-align: center;
+    margin: 25px;
+    padding: 10px;
+}
+
 /* storm center section ---------------------------------------------------------------------------*/
 .storm-report{
     background-color: rgba(1, 68, 33, .6);
