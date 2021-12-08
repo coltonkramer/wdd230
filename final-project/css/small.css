@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Work+Sans:wght@300;400&display=swap');
+html, body{
+    margin: 0 auto;
+}
+header{
+    margin: 0 auto;
+    font-family: 'Work Sans', sans-serif;
+    background: url("../images/pexels-buro-millennial-1438072.webp");
+}
+header li{
+    list-style: none;
+}
+header ul{
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
