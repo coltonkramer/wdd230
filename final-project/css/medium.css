@@ -3,6 +3,9 @@
     #weather{
         background-repeat:round;
     }
-
+    iframe{
+        width: 60%;
+        height: 300px;
+    }
 
 }
