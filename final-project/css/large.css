@@ -1,16 +1,50 @@
 @media only screen and (min-width: 60em){
 
 
-    nav ul{
+    main h2{
+        text-align: center;
+    }
+    nav{
+        margin: 0 auto;
+        width: 75%;
+    }
+    .navigation{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        
+        margin-top: 10px;
     }
-    header{
-        height: 600px;
+    .navigation li{
+        display: block;
+
     }
+    .navigation li:first-child{
+        display: none;
+    }
+    .navigation li:hover{
+        background-color: rgba(0, 0, 0, .5);
+    
+    }
+    #highlight{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 auto;
+    }
+    .company-containers img{
+        width: 400px;
+        height: 250px;
+    }
+    #weather{
+        background-repeat:round;
+    }
+    #membership-levels{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+    
 
 
 

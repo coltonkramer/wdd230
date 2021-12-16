@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/small.css"/>
+    <link rel="stylesheet" href="css/medium.css"/>
+    <link rel="stylesheet" href="css/large.css"/>
+    <script defer src="js/script.js"></script>
+    <script defer src="js/weather.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Charlotte Chamber of Commerce</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class = "navigation">
+                <li><a href="#" onclick="toggleMenu()">☰</a></li>
+                <li><a href="index.html"><strong>Home</strong></a></li>
+                <li><a href="#"><strong>City</strong></a></li>
+                <li><a href="#"><strong>Directory</strong></a></li>
+                <li><a href="#"><strong>Contact</strong></a></li>
+            </ul>
+        </nav>
+        <img src="images/logo2.png" alt="charlotte chamber of Commerce logo" id="logo">
+    </header>
+<main>
+    <form class="membership">
+            <h2 id="membership-h2">Join Our Chamber!</h2>
+            <label for="first-name">First Name</label><br>
+            <input type="text" name="first-name" id="first-name" required placeholder="John"><br>
+            <label for="business-name">Last Name</label><br>
+            <input type="text" name="last-name" id="last-name" required placeholder="Smith"
+            minlength="5" /><br>
+            <label>Title:</label><br>
+            <div>
+                <label><input type="radio" name="title" value="Mr." class="membership-title" />Mr.</label>
+                <label><input type="radio" name="title" value="Mrs." class="membership-title" />Mrs.</label>
+                <label><input type="radio" name="title" value="Ms." class="membership-title" />Ms.</label>
+                <label><input type="radio" name="title" value="Dr." class="membership-title" />Dr.</label>
+                <label><input type="radio" name="title" value="Prof." class="membership-title" />Prof.</label><br>
+            </div>
+            <label for="email">Email</label><br>
+            <input type="email" name="e-mail" id="email" required placeholder="myemail@example.com" /><br>
+            <label for="phone">Phone Number</label><br>
+            <input type="tel" name="phone" id="phone" required placeholder="123-456-7890" /><br>
+            <label for="business-name">Business Name</label><br>
+            <input type="text" name="business-name" id="business-name" required placeholder="Charlotte Cafe"
+                minlength="5"/><br>
+                <label for="business-address">Business Address</label><br>
+            <input type="text" name="business-address" id="business-address" placeholder="123 Charlotte Ave"
+                minlength="5"/><br>
+                <label for="business-website">Business Website</label><br>
+            <input type="text" name="business-website" id="business-website" placeholder="Charlotte.com"
+                minlength="5"/><br>
+                <label for="business-description">Business Description</label><br>
+            <input type="text" name="business-description" id="business-description" placeholder="We are a business"
+                minlength="5"/><br>
+                <label>Membership Package:</label><br>
+                <div>
+                    <label><input type="radio" name="level" value="Non-profit" class="membership-level" />Non-profit</label>
+                    <label><input type="radio" name="level" value="Bronze" class="membership-level" />Bronze</label>
+                    <label><input type="radio" name="level" value="Silver" class="membership-level" />Silver</label>
+                    <label><input type="radio" name="level" value="Gold" class="membership-level" />Gold</label><br>
+                </div>
+                <input id = sbutton type="submit" value="Join us!" />
+    </form>
+    <section id="membership-levels">
+        <div class="membership-level-containers" id="non-profit">
+            <h3>Non-profit</h3>
+            <p>$100 per year</p>
+            <p><strong>Access to:</strong></p>  
+            <p>All the perks of the gold tier.</p> 
+            <p>Must be a <strong>non-profit organization</strong> to select</p>
+        </div>
+        <div class="membership-level-containers" id="bronze">
+            <h3>Bronze</h3>
+            <p>$200 per year</p>
+            <p><strong>Access to:</strong></p> 
+            <p>One business training per year</p>
+            <p>Two luncheon tickets per year</p>
+            <p>A listing in the directory</p>
+            <p>One entry to enter the company highlight raffle</p>
+
+        </div>
+        <div class="membership-level-containers" id="silver">
+            <h3>Silver</h3>
+            <p>$400 per year</p>
+            <p><strong>Access to:</strong></p>  
+            <p>Two business trainings per year</p>
+            <p>Four luncheon tickets per year</p>
+            <p>A listing in the directory</p>
+            <p>Three entries to enter the company highlight raffle</p>
+        </div>
+        <div class="membership-level-containers" id="gold">
+            <h3>Gold</h3>
+            <p>$1000 per year</p>
+            <p><strong>Access to:</strong></p>  
+            <p>All five business trainings per year</p>
+            <p>Ten luncheon tickets per year</p>
+            <p>A listing in the directory</p>
+            <p>Five entries to enter the company highlight raffle</p>
+        </div>
+    </section>
+</main>
+    <footer>
+        <p>Connect with us!</p>
+        <p>704-980-8272</p>
+        <p>615 S College St, Charlotte, NC 28202</p>
+        <p>Info@charlotteareachamber.com</p>
+        <a href="#"><img src="images/facebook.png" alt="facebook logo" class="socials"></a>
+        <a href="#"><img src="images/twitter.png" alt="twitter logo" class="socials"></a>
+        <a href="#"><img src="images/instagram.png" alt="instagram logo" class="socials"></a>
+        <p>City of Charlotte Chamber of Commerce | ©2021-2022 | <span id="footer-date"></span></p>
+    </footer>
+</body>
+</html>

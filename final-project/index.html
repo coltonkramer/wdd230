@@ -7,64 +7,100 @@
     <link rel="stylesheet" href="css/small.css"/>
     <link rel="stylesheet" href="css/medium.css"/>
     <link rel="stylesheet" href="css/large.css"/>
+    <script defer src="js/script.js"></script>
+    <script defer src="js/weather.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <title>Charlotte Chamber of Commerce</title>
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="#"><strong>☰</strong></a></li>
+            <ul class = "navigation">
+                <li><a href="#" onclick="toggleMenu()">☰</a></li>
                 <li><a href="#"><strong>City</strong></a></li>
-                <li><a href="#"><strong>Join</strong></a></li>
+                <li><a href="join.html"><strong>Join</strong></a></li>
                 <li><a href="#"><strong>Directory</strong></a></li>
                 <li><a href="#"><strong>Contact</strong></a></li>
-                <img src="images/output-onlinepngtools-white.png" alt="charlotte chamber of Commerce logo" id="logo">
             </ul>
         </nav>
-        <!-- <img src="images/pexels-buro-millennial-1438072.webp" alt="people working on steps" id="hero-banner"> -->
+        <img src="images/logo2.png" alt="charlotte chamber of Commerce logo" id="logo">
     </header>
-</body>
-<main>
-    <section id="highlight">
-        <h2>This months company spotlight</h2>
+    <main>
+        <img src="images/pexels-buro-millennial-1438072.webp" alt="people working outside" id="hero-banner">
+        <h2>Company Spotlight</h2>
+        <section id="highlight">
         <div class="company-containers">
-            <h3>Company 1</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h3>Lupie's Cafe</h3>
+            <img src="images/lupies-cafe.jpg">
+            <p>Down-home kitchen serving up old-school comfort eats such as meatloaf & chicken 'n' dumplings.<br></p>
+            <p><strong>Find them at:</strong> 2718 Monroe Rd, Charlotte, NC 28205 </p>
+            <p><strong>Phone Number: </strong>(704) 374-1232</p>
+            <p>Please visit the <u><a href="https://www.facebook.com/pages/category/American-Restaurant/Lupies-Cafe-Official-342696929086232/">Lupies Facebook</a></u> page to learn more!</p>
         </div>
         <div class="company-containers">
-            <h3>Company 2</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h3>Pinky's Westside Grill</h3>
+            <img src="images/pinkys.jpg">
+            <p>Local American chain serving sandwiches, hot dogs, tacos & cocktails in a casual, offbeat space.</p>
+            <p><strong>Find them at:</strong> 1600 W Morehead St, Charlotte, NC 28208 </p>
+            <p><strong>Phone Number: </strong>(704) 332-0402</p>
+            <p>Please visit <u><a href="https://eatatpinkys.com/">eatatpinkys.com</a></u> to learn more!</p>
         </div>
         <div class="company-containers">
-            <h3>Company 3</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h3>Inner Peaks</h3>
+            <img src="images/inner-peaks.jpg">
+            <p>Inner Peaks provides an environment that can help you stay fit, reduce stress, build focus, meet people and just have a great time.</p>
+            <p><strong>Find them at:</strong> 2220 S Tryon St, Charlotte, NC 28203</p>
+            <p><strong>Phone Number: </strong>(980) 242-3244</p>
+            <p>Please visit <u><a href="https://www.innerpeaks.com/">innerpeaks.com</a></u> to learn more!</p>
         </div>
     </section>
     <section id=call-to-action>
-        <p>What to be a part of our community? Click here to <a href="join.html">join</a></p>
+            <p>Want to take part?</p>
+            <a href="join.html">Join us!</a>
     </section>
     <section id="weather">
-        <ul>
-            <li>Current Temperature: <span>54°</span></li>
-            <li>Current Condition: Cloudy</li>
-            <li>Description: </li>
-            <li>Humidity</li>
-        </ul>
-    </section>
-    <section id="contact">
-        Send us a message 
-        <form>
-            <label for="name">Name</label><br>
-            <input type="text" name="name" id="name"><br>
-            <label for="email">Email</label><br>
-            <input type="email" name="email" id="email"><br>
-            <label for="message">Message</label><br>
-            <input type="text" name="message" id="message"><br>
-            <submit type="submit">Send</submit>
-        </form>
-    </section>
-    <footer>
+        <div id="weather-background-container">
+            <div id="current-weather-container">
 
-    </footer>
+            </div>
+            <div id="forcast-container">
+
+            </div>
+        </div>
+    </section>
+    <section id="events">
+        <div id="events-container">
+            <h3>Upcoming Events</h3>
+            <div class="event">
+                <h4>Member Orientation</h4>
+                <p>Jan 6th, 2022</p>
+                <p>8:30 AM - 10:00 AM</p>
+                <p>Member Orientation - This event is for all members who want more information about their Charlotte Area Chamber membership. Come have your questions answered from engagement to technology.</p>
+            </div>
+            <div class="event">
+                <h4>Coffee with the Chamber - SouthPark</h4>
+                <p>Jan 25th, 2022</p>
+                <p>8:30 AM - 9:30 AM</p>
+                <p>Join us for Coffee with the Chamber, an hour of informal networking with other Charlotte Area Chamber members and guests. Join us for coffee at Reid's SouthPark and make some new connections!</p>
+            </div>
+        </div>
+    </section>
+    <section id="mission">
+        <div id="mission-container">
+            <h3>Our Mission</h3>
+            <p>The Charlotte Area Chamber believes a strong, vital community goes hand-in-hand with a strong, vital business environment. By offering a variety of outstanding business programs, the Charlotte Area Chamber is dedicated to providing something for everyone.</p>
+        </div>
+    </section>
 </main>
+    <footer>
+        <p>Connect with us!</p>
+        <p>704-980-8272</p>
+        <p>615 S College St, Charlotte, NC 28202</p>
+        <p>Info@charlotteareachamber.com</p>
+        <a href="#"><img src="images/facebook.png" alt="facebook logo" class="socials"></a>
+        <a href="#"><img src="images/twitter.png" alt="twitter logo" class="socials"></a>
+        <a href="#"><img src="images/instagram.png" alt="instagram logo" class="socials"></a>
+        <p>City of Charlotte Chamber of Commerce | ©2021-2022 | <span id="footer-date"></span></p>
+    </footer>
+</body>
 </html>

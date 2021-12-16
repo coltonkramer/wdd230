@@ -1,19 +1,186 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Work+Sans:wght@300;400&display=swap');
 html, body{
     margin: 0 auto;
+    font-size:  18px;
+    background-color: #855053;
+    color: aliceblue;
 }
 header{
     margin: 0 auto;
     font-family: 'Work Sans', sans-serif;
-    background: url("../images/pexels-buro-millennial-1438072.webp");
-}
-header li{
-    list-style: none;
+    background-color: #5B3033;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 header ul{
+    display: flex;
+    flex-direction: row;
     margin: 0 auto;
+    list-style: none;
+    padding-left: 0;
+    margin-left: 10px;
 }
+header li{
+    padding: 10px;
+}
+
 a{
     text-decoration: none;
     color: aliceblue;
+}
+footer{
+    background-color: #5B3033;
+    padding: 10px;
+    text-align: center;
+}
+
+#hero-banner{
+    width: 100%;
+}
+.navigation.responsive li{
+    display:block;
+    background-color: rgba(0, 0, 0, .65);
+}
+.navigation li:first-child{
+    display: block;   
+}
+.navigation li{
+    display: none;
+}
+#logo{
+    width: 200px;
+    height: 75px;
+
+}
+.company-containers{
+    padding: 10px;
+    background-color:#5B3033;
+    margin: 5px 0;
+}
+.company-containers h3{
+    color:#878787
+}
+.company-containers img{
+    width: 100%;
+}
+#highlight{
+    margin: 0 auto;
+    padding: 10px;
+}
+#highlight h2{
+    margin: 0 auto;
+}
+#call-to-action{
+    background-color: aliceblue;
+    color: #5B3033;
+    padding: 10px;
+}
+#call-to-action p{
+    font-size: 2em;
+    text-align: center;
+    margin: 0 auto;
+}
+#call-to-action a{
+    background-color: #5B3033;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    margin: 0 auto;
+}
+
+#weather{
+    background: url("../images/pexels-kaique-rocha-125510.jpg");
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#weather-background-container{
+    background-color: rgba(0, 0, 0, .65);
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#weather ul{
+    padding: 10px;
+    list-style-type: none;
+}
+#forcast-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.forcast-day-container{
+    text-align: center;
+    display: grid;
+}
+#current-weather-container{
+    text-align: center;
+}
+#temp{
+    font-size: 4em;
+    margin: 0 auto;
+}
+#seperator{
+    margin: 0 auto;
+}
+#humid, #forcast-date, #forcast-temp, #forcast-condition, #forcast-high, #cond{
+    margin: 3px auto;
+}
+#mission, #events{
+    display: flex;
+}
+#mission-container, #events-container{
+    text-align: center;
+    padding: 10px;
+    background-color: #5B3033;
+    width: 100%;
+    margin: 5px 10px;
+}
+#sbutton{
+    margin: 5px auto;
+    display: flex;
+}
+.socials{
+    width: 50px;
+    border-radius: 50%;
+}
+.membership{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.membership label{
+    margin: 5px auto;
+}
+.membership-level-containers{
+    padding: 5px 10px;
+}
+.membership-level-containers h3{
+    border-bottom:1px solid aliceblue;
+}
+#non-profit{
+    background-color: #094d7d;
+}
+#bronze{
+    background-color: #824A02;
+}
+#silver{
+    background-color: #A7A7AD;
+}
+#gold{
+    background-color: #D6AF36;
 }
