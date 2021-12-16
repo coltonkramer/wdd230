@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/small.css"/>
+    <link rel="stylesheet" href="css/medium.css"/>
+    <link rel="stylesheet" href="css/large.css"/>
+    <script defer src="js/script.js"></script>
+    <script defer src="js/weather.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Charlotte Chamber of Commerce</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class = "navigation">
+                <li><a href="#" onclick="toggleMenu()">☰</a></li>
+                <li><a href="Home"><strong>Home</strong></a></li>
+                <li><a href="city.html"><strong>City</strong></a></li>
+                <li><a href="join.html"><strong>Join</strong></a></li>
+                <li><a href="directory.html"><strong>Directory</strong></a></li>
+            </ul>
+        </nav>
+        <img src="images/logo2.png" alt="charlotte chamber of Commerce logo" id="logo">
+    </header>
+    <main>
+        <iframe width="400" height="250" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=28270&key=AIzaSyBG-q7f48AewfbauGL5pm2NKfG8gvf3njA"></iframe>
+        <form>
+            <label for="name">Full Name</label><br>
+            <input type="text" name="first-name" id="first-name" required placeholder="John"><br>
+            <label for="email">Email</label><br>
+            <input type="email" name="e-mail" id="email" required placeholder="myemail@example.com" /><br>
+            <label for="phone">Phone Number</label><br>
+            <input type="tel" name="phone" id="phone" required placeholder="123-456-7890" /><br>
+            <label for="business-name">Business Name</label><br>
+        </form>
+    </main>
+    <footer>
+        <p>Connect with us!</p>
+        <p>704-980-8272</p>
+        <p>615 S College St, Charlotte, NC 28202</p>
+        <p>Info@charlotteareachamber.com</p>
+        <a href="#"><img src="images/facebook.png" alt="facebook logo" class="socials"></a>
+        <a href="#"><img src="images/twitter.png" alt="twitter logo" class="socials"></a>
+        <a href="#"><img src="images/instagram.png" alt="instagram logo" class="socials"></a>
+        <p>City of Charlotte Chamber of Commerce | ©2021-2022 | <span id="footer-date"></span></p>
+    </footer>
+</body>
+</html>

@@ -3,7 +3,6 @@ const url = "http://api.openweathermap.org/data/2.5/onecall?lat=35.227085&lon=-8
 fetch(url)
 .then((response) => response.json())
 .then((weather) => {
-    console.log(weather)
     let temp = Math.round(weather.current.temp)
     let condition = weather.current.weather[0].main;
     let humidity = weather.current.humidity
