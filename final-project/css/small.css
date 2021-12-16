@@ -184,3 +184,9 @@ footer{
 #gold{
     background-color: #D6AF36;
 }
+#contact-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

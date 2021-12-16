@@ -1,4 +1,4 @@
-const url = "http://api.openweathermap.org/data/2.5/onecall?lat=35.227085&lon=-80.843124&exclude=hourly,minutely&units=imperial&appid=953336065a7c8c590044bd8c972cc6b6"
+const url = "https://api.openweathermap.org/data/2.5/onecall?lat=35.227085&lon=-80.843124&exclude=hourly,minutely&units=imperial&appid=953336065a7c8c590044bd8c972cc6b6"
 
 fetch(url)
 .then((response) => response.json())
