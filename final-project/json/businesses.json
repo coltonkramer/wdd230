@@ -1,7 +1,5 @@
-{"menu": {
-    "id": "businesses",
-    "business":[
-
+{
+    "businesses":[
      {
         "name": "Assorted Table Wine Shoppe",
         "address": "224 E 7th St, Charlotte, NC 28202",
@@ -51,4 +49,3 @@
         "site": "http://cocoandthedirector.com/"
     }
     ]}
-  }

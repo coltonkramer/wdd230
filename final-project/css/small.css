@@ -19,9 +19,11 @@ header ul{
     display: flex;
     flex-direction: row;
     margin: 0 auto;
-    list-style: none;
     padding-left: 0;
     margin-left: 10px;
+}
+ul{
+    list-style: none;
 }
 header li{
     padding: 10px;
@@ -199,9 +201,16 @@ iframe{
     text-align: center;
 }
 .director-container{
-    padding: 5px;
     text-align: center;
+    padding: 10px;
 }
 .director-container img{
     width: 70%;
+}
+#directory{
+    padding: 10px;
+}
+.business-container{
+    text-align: center;
+    border-bottom: 1px solid aliceblue;
 }
