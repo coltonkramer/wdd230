@@ -1,0 +1,54 @@
+{"menu": {
+    "id": "businesses",
+    "business":[
+
+     {
+        "name": "Assorted Table Wine Shoppe",
+        "address": "224 E 7th St, Charlotte, NC 28202",
+        "number": "704-277-3234",
+        "site": "https://assortedtablewine.com/"
+    },
+    {
+        "name": "Hayden Olivia Bridal Boutique",
+        "address": "221 S. Tryon Street, Suite 200 Charlotte, NC 28202",
+        "number": "704 333 0377",
+        "site": "https://haydenolivia.com/"
+    },
+    {
+        "name": "Abbeydale Mens Tailors",
+        "address": "112 S. Tryon St. #600 Charlotte, NC 28202",
+        "number": "704-277-3234",
+        "site": "https://assortedtablewine.com/"
+    },
+    {
+        "name": "Shea Vanity Cosmetic Tattoos & Brows",
+        "address": "650 E. Stonewall St. Charlotte, NC 28202",
+        "number": "-",
+        "site": "https://www.uptownfarmersmarket.com/"
+    },
+    {
+        "name": "The Uptown Farmers Market",
+        "address": "300 S. Davidson Street / parking lot., Charlotte, NC 28202",
+        "number": "704-277-3234",
+        "site": "https://www.aerialclt.com/our-facilities"
+    },
+    {
+        "name": "AerialCLT Fitness",
+        "address": "801 N. Tryon St., Charlotte, NC 28202",
+        "number": "(980) 292-1593",
+        "site": "https://assortedtablewine.com/"
+    },
+    {
+        "name": "The Hair Extensions",
+        "address": "520 West 10th St., Charlotte, NC 28202",
+        "number": "704-500-0001",
+        "site": "https://www.uptownweavecafe.com/"
+    },
+    {
+        "name": "Cocoa and The Director Coffee Shop",
+        "address": "100 W Trade Street, Charlotte, NC 28202",
+        "number": "704-353-6003",
+        "site": "http://cocoandthedirector.com/"
+    }
+    ]}
+  }

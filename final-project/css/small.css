@@ -195,7 +195,13 @@ iframe{
     width: 90%;
     height: 300px;
 }
+#board-of-directors{
+    text-align: center;
+}
 .director-container{
     padding: 5px;
     text-align: center;
+}
+.director-container img{
+    width: 70%;
 }
